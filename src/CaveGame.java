@@ -1,3 +1,6 @@
+import clazz.*;
+import enumz.*;
+
 public class CaveGame {
 
     @Deprecated
@@ -5,6 +8,8 @@ public class CaveGame {
         System.out.println("Welcome to Cavern Explorer!");
         System.out.println("jumping to method createPlayer()...");
         System.out.println();
+
+        Player player = new Player("Chiko", Race.DWARF);
     }
 
     public static void createPlayer() {
