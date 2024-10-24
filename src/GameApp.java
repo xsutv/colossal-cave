@@ -1,6 +1,7 @@
 import java.util.*;
-import clazz.*;
-import enumz.*;
+
+import enums.*;
+import subclass.*;
 
 public class GameApp {
 
