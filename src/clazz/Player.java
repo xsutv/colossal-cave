@@ -8,12 +8,17 @@ public class Player {
     private int hitPoints;
     private Race race;
 
-    public Player(String name, Race race) {
+    public Player(String name, String playerRace) {
         this.name = name;
         this.hitPoints = 10;
-        this.race = race;
+        this.race = Race.valueOf(playerRace);
     }
 
+    @Override
+    public String toString() {
+        return "Player [name=" + name + ", hitPoints=" + hitPoints + ", race=" + race + "]";
+    }
 
+    
     
 }
