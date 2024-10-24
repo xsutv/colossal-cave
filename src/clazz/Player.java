@@ -1,3 +1,4 @@
+package src.clazz;
 public class Player {
 
     private String name;
