@@ -4,7 +4,6 @@ import enumz.*;
 
 public class GameApp {
 
-    @Deprecated
     public static void main(String[] args) {
 
         CaveGame game = new CaveGame();

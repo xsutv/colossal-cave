@@ -1,17 +1,16 @@
 package clazz;
 
 import java.util.*;
-
 import enumz.*;
 
 public class CaveGame {
 
-    private Player player;
-
+    // Default constructor for creating an instance of CaveGame.
     public CaveGame() {
         
     }
 
+    // Interactive creation of Player for a game.. should add try-catch handling
     public Player createPlayer() {
         try (Scanner input = new Scanner(System.in)) {
 
@@ -33,5 +32,7 @@ public class CaveGame {
             return p;
         }
     }
+
+
 
 }
