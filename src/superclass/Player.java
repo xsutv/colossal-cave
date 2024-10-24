@@ -1,6 +1,6 @@
-package clazz;
+package superclass;
 
-import enumz.*;
+import enums.*;
 
 public class Player {
 

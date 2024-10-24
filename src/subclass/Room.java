@@ -1,4 +1,4 @@
-package clazz;
+package subclass;
 
 public class Room {
     public static void enterRoom(){

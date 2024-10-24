@@ -1,4 +1,4 @@
-package clazz;
+package superclass;
 
 public class Creature {
     private int hitPoints;

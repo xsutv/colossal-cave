@@ -1,6 +1,7 @@
-package clazz;
+package subclass;
 
-import enumz.Species;
+import enums.*;
+import superclass.*;
 
 public class Monster extends Creature{
     private int hitPoints;

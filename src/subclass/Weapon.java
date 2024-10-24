@@ -1,6 +1,6 @@
-package clazz;
+package subclass;
 
-import enumz.*;
+import enums.*;
 
 public class Weapon {
     private int damage;
