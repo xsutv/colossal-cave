@@ -1,4 +1,4 @@
-package src.clazz;
+package clazz;
 
 public class Weapon {
     private int damage;

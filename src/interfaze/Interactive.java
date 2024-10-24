@@ -1,4 +1,4 @@
-package src.interfaze;
+package interfaze;
 
 public interface Interactive {
     public void interact();
