@@ -6,14 +6,14 @@ import interfaces.*;
 import subclass.items.*;
 
 public class LootingBag {
-    private List<Interactive> lootingBag = new ArrayList<>(List.of(new Coins(21)));
 
-    public List<Interactive> getLoot() {
-        return lootingBag;
-    }
+    private List<Interactive> lootingBag = new ArrayList<>();
 
-    public LootingBag() {
+    // Default constructor.
+    public LootingBag() {}
 
+    public String getLoot() {
+        return lootingBag.toString();
     }
 
     public void addItem(Interactive item) {
@@ -28,6 +28,12 @@ public class LootingBag {
         }
     }
 
+    @Override
+    public String toString() {
+        return "LootingBag [lootingBag=" + lootingBag + "]";
+    }
+
+    
     // Add a method where we have a list with several lists inside for different
     // categories, weapons, resources, money etc. Add issue.
 }
