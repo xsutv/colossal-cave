@@ -19,6 +19,17 @@ public class Player {
         return "Player [name=" + name + ", hitPoints=" + hitPoints + ", race=" + race + "]";
     }
 
+    public int getHitPoints() {
+        return hitPoints;
+    }
+
+    public void setHitPoints(int hitPoints) {
+        this.hitPoints = hitPoints;
+    }
+
+    public int damage(Player player) {
+        
+    }
     
     
 }

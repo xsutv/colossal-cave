@@ -1,13 +1,19 @@
 package subclass.items;
 
 import interfaces.*;
+import superclass.*;
 
 public class Coins implements Interactive {
 
+
     @Override
-    public void interact() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'interact'");
+    public void interact(Player player) {
+
+    }
+
+    @Override
+    public String getName() {
+
     }
     
 }
