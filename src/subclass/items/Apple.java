@@ -21,5 +21,11 @@ public class Apple implements Interactive {
         return "apple-ID-ertyuik1m234";
     }
 
+    @Override
+    public String toString() {
+        return "Apple";
+    }
+
+    
     // This item should heal a player when interacted with.
 }
