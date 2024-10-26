@@ -4,6 +4,7 @@ import java.util.*;
 
 import enums.*;
 import superclass.*;
+
 public class CaveGame {
 
     List<String> items = new ArrayList<>();
@@ -11,24 +12,27 @@ public class CaveGame {
 
     // Default constructor for creating an instance of CaveGame.
     public CaveGame() {
-        
+
     }
-    
 
     // Should this method be in Player class?
     // Interactive creation of Player for a game.. should add try-catch handling
     public Player createPlayer() {
         try (Scanner input = new Scanner(System.in)) {
 
-            System.out.println("Choose a name for your character");
+            System.out.print("Choose a name for your character: ");
             String name = input.nextLine();
 
-            System.out.println("Choose race of your character");
+            System.out.print("Choose race of your character: ");
 
-            Race[] races = Race.values();
-            for (Race r : races) {
-                System.out.printf("" + r + "%n");
+            for (int i = 0; i < Race.values().length; i++) {
+                if (i == Race.values().length - 1) {
+                    System.out.print(Race.values()[i] + ": ");
+                } else {
+                    System.out.print(Race.values()[i] + ", ");
+                }
             }
+
             String playerRace = input.nextLine().toUpperCase();
 
             Player p = new Player(name, playerRace);
@@ -38,7 +42,5 @@ public class CaveGame {
             return p;
         }
     }
-
-
 
 }
