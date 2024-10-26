@@ -36,4 +36,11 @@ public class Coins implements Interactive {
         return "coin-ID-ertyuik1m234";
     }
 
+    @Override
+    public String toString() {
+        return "Coins [coinAmount=" + coinAmount + ", coinSum=" + coinSum + "]";
+    }
+
+    
+
 }
