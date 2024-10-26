@@ -27,8 +27,21 @@ public class Player {
         this.hitPoints = hitPoints;
     }
 
-    public int damage(Player player) {
+    public void damage(int dmg) {
+        this.hitPoints -= dmg;
+        System.out.println("You took " + dmg + " damage.");
+        System.out.println("Health left: " + this.hitPoints);
+        if (this.hitPoints < 0) {
+            System.out.println("You died u fkn nub");
+        }
+    }
 
+    public void heal(int heal) {
+        if (this.hitPoints > 1 && this.hitPoints < 10) {
+            this.hitPoints += heal;
+            System.out.println("You recieved " + heal + " hitpoints.");
+            System.out.println("Health left: " + this.hitPoints);
+        }
     }
 
 }

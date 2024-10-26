@@ -7,12 +7,13 @@ public class Apple implements Interactive {
 
     @Override
     public void interact(Player player) {
-
+        System.out.println("This red apple looks delicious.");
+        player.heal(1);
     }
 
     @Override
     public String getName() {
-
+        return "Apple";
     }
 
     @Override
