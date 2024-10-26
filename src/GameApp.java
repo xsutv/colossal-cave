@@ -39,16 +39,27 @@ public class GameApp {
 
             // loot tests:
             LootingBag loot = new LootingBag();
-            List<Interactive> looty = loot.getLoot();
-            for (Interactive l : looty) {
-                System.out.print("loot before: " + l);
-            }
 
-            loot.removeItem("coin-ID-ertyuik1m234");
+            loot.addItem(apple);
 
-            for (Interactive l : looty) {
-                System.out.print("loot after: " + l);
-            }
+            Coins coin = new Coins(5);
+
+            loot.addItem(coin);
+
+            System.out.println(loot);
+
+            loot.removeItem("apple-ID-ertyuik1m234");
+
+            System.out.println(loot);
+
+            loot.removeItem("asda");
+
+            System.out.println(loot);
+
+            // Test other: 
+
+
+
 
         }
 
