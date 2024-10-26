@@ -1,5 +1,11 @@
 package interfaces;
 
+import superclass.*;
+
 public interface Interactive {
-    public void interact();
+
+    void interact(Player player);
+    
+    String getName();
+
 }
