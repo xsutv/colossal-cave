@@ -2,7 +2,7 @@ package superclass;
 
 import enums.*;
 
-public class Player {
+public class Player extends Creature {
 
     private String name;
     private int hitPoints;
